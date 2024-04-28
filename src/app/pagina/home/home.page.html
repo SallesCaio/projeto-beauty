@@ -1,0 +1,14 @@
+<ion-header  [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title size="large" color="danger" >Beauty <ion-icon name="flower"></ion-icon></ion-title>
+    <ion-menu-button slot="start" color="danger"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngFor="let p of container">
+  <ion-img [src]="p.img"></ion-img><br>
+  <ion-button color="light" (click)="openPage('/home')" expand="block">INICIO</ion-button>
+  <ion-button color="light" (click)="openPage('/servicos')" expand="block">PROCEDIMENTOS</ion-button>
+  <ion-button color="light" (click)="openPage('/agende')" expand="block">AGENDAMENTO</ion-button>
+  <ion-button color="light" (click)="openPage('/cadastro')" expand="block">CADASTRO</ion-button>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header  [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title size="large" color="danger" >Beauty <ion-icon name="flower"></ion-icon></ion-title>
+    <ion-menu-button slot="start" color="danger"></ion-menu-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nome" labelPlacement="floating" placeholder="Digite seu primeiro nome" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Sobrenome" labelPlacement="floating" placeholder="Digite seu sobrenome." type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Data de Nascimento" labelPlacement="floating" placeholder="Digite a data do seu nascimento" type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="CPF" labelPlacement="floating" placeholder="Digite seu CPF." type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Email" labelPlacement="floating" placeholder="Digite o seu email." type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Senha" labelPlacement="floating" placeholder="Crie uma senha." type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Confirmar Senha" labelPlacement="floating" placeholder="Confirme a senha." type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button color="primary">ENVIAR</ion-button>  <ion-button color="primary" slot="end">LIMPAR</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
